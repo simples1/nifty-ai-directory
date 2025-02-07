@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nifty-ai-directory</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Discover the Best AI Tools</h1>
+            <p>Find the perfect AI tools to enhance your workflow</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search AI tools...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+    </header>
 
-  <body>
-    <div id="root"></div>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Categories Section -->
+    <section class="categories container">
+        <div class="category-buttons">
+            <button class="category-btn active" data-category="all">
+                <i class="fas fa-sparkles"></i>All
+            </button>
+            <button class="category-btn" data-category="chatbots">
+                <i class="fas fa-comments"></i>ChatBots
+            </button>
+            <button class="category-btn" data-category="image">
+                <i class="fas fa-image"></i>Image
+            </button>
+            <button class="category-btn" data-category="video">
+                <i class="fas fa-video"></i>Video
+            </button>
+            <button class="category-btn" data-category="audio">
+                <i class="fas fa-music"></i>Audio
+            </button>
+            <button class="category-btn" data-category="code">
+                <i class="fas fa-code"></i>Code
+            </button>
+            <button class="category-btn" data-category="general">
+                <i class="fas fa-brain"></i>General AI
+            </button>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-grid container">
+        <!-- Tools will be dynamically inserted here -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>

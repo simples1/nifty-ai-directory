@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SearchBar } from "@/components/SearchBar";
 import { CategoryButton } from "@/components/CategoryButton";
 import { ToolCard } from "@/components/ToolCard";
+import toolData from "./toolData";
 import { Brain, Image, MessageSquare, Music, Video, Code, Sparkles } from "lucide-react";
 
 const categories = [
